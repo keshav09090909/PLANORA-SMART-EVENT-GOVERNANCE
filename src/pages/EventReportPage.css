@@ -1,0 +1,366 @@
+.event-report-page {
+  padding: 2rem 0;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.report-header h1 {
+  color: #2c5282;
+  margin: 0;
+}
+
+.report-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.export-btn,
+.back-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.export-btn {
+  background: #48bb78;
+  color: white;
+}
+
+.export-btn:hover {
+  background: #38a169;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.back-btn {
+  background: #e2e8f0;
+  color: #2d3748;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  background: #cbd5e0;
+  transform: translateY(-2px);
+}
+
+.report-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.report-section {
+  padding: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.report-section:last-child {
+  border-bottom: none;
+}
+
+.report-section h2 {
+  color: #2c5282;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #718096;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  color: #2d3748;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.event-type {
+  text-transform: capitalize;
+}
+
+.attendees {
+  color: #2c5282;
+  font-weight: 700;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #feebc8;
+  color: #7c2d12;
+}
+
+.status-badge.approved {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.rejected {
+  background: #feb2b2;
+  color: #742a2a;
+}
+
+.schedule-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f7fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.schedule-icon {
+  font-size: 3rem;
+}
+
+.schedule-label {
+  font-weight: 600;
+  color: #718096;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.schedule-date {
+  color: #2d3748;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.schedule-time {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.schedule-divider {
+  font-size: 2rem;
+  color: #cbd5e0;
+  font-weight: 700;
+}
+
+.duration-box {
+  background: #edf2f7;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #2d3748;
+}
+
+.highlight-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.waste-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.waste-icon {
+  font-size: 5rem;
+}
+
+.waste-content {
+  flex: 1;
+}
+
+.waste-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.waste-label {
+  font-size: 1.25rem;
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.waste-note {
+  color: #718096;
+  font-size: 0.875rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.vendors-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.vendor-item {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3182ce;
+}
+
+.vendor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.vendor-header h4 {
+  color: #2c5282;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.vendor-category {
+  background: #3182ce;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.vendor-contacts {
+  display: flex;
+  gap: 2rem;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.summary-card {
+  background: #f7fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summary-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.summary-label {
+  color: #718096;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loading,
+.error-message {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  background: #feb2b2;
+  color: #742a2a;
+}
+
+@media (max-width: 768px) {
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .schedule-divider {
+    transform: rotate(90deg);
+  }
+
+  .waste-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vendor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .vendor-contacts {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
